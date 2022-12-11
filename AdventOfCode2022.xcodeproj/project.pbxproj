@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3231D52929465E9500DCD86E /* Day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231D52829465E9500DCD86E /* Day4.swift */; };
+		3231D52B2946660E00DCD86E /* Day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231D52A2946660E00DCD86E /* Day5.swift */; };
 		327FDF9D29464FF4005262CD /* Day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FDF9C29464FF4005262CD /* Day3.swift */; };
 		32E3BE6D293AB0390048FFB3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3BE6C293AB0390048FFB3 /* main.swift */; };
 		32E3BE75293AB04F0048FFB3 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3BE74293AB04F0048FFB3 /* Day1.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		3231D52829465E9500DCD86E /* Day4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4.swift; sourceTree = "<group>"; };
+		3231D52A2946660E00DCD86E /* Day5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5.swift; sourceTree = "<group>"; };
 		327FDF9C29464FF4005262CD /* Day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3.swift; sourceTree = "<group>"; };
 		32E3BE69293AB0390048FFB3 /* AdventOfCode2022 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AdventOfCode2022; sourceTree = BUILT_PRODUCTS_DIR; };
 		32E3BE6C293AB0390048FFB3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				32E3BE79293AB3C30048FFB3 /* Day2.swift */,
 				327FDF9C29464FF4005262CD /* Day3.swift */,
 				3231D52829465E9500DCD86E /* Day4.swift */,
+				3231D52A2946660E00DCD86E /* Day5.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32E3BE75293AB04F0048FFB3 /* Day1.swift in Sources */,
+				3231D52B2946660E00DCD86E /* Day5.swift in Sources */,
 				3231D52929465E9500DCD86E /* Day4.swift in Sources */,
 				327FDF9D29464FF4005262CD /* Day3.swift in Sources */,
 				32E3BE7A293AB3C30048FFB3 /* Day2.swift in Sources */,

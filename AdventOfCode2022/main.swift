@@ -14,9 +14,10 @@ let calendar: [any Day] = [
   Day2(),
   Day3(),
   Day4(),
+  Day5(),
 ]
 
-// currentDay = 4
+// currentDay = 5
 
 if let day = currentDay {
   print(calendar[day - 1].solve())
