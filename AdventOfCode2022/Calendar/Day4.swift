@@ -29,18 +29,19 @@ struct Day4: Day {
       "-"
       TryCapture { One(.digit) } transform: { Int($0) }
     }
-    
+
     let containedPairs = input
       .split(separator: "\n")
       .reduce(into: 0) { partialResult, line in
         let result = try! regex.wholeMatch(in: line)
         let (_, start1, end1, start2, end2) = result!.output
-        
+
         if (start1 >= start2 && end1 <= end2) ||
-           (start1 <= start2 && end1 >= end2) {
+          (start1 <= start2 && end1 >= end2)
+        {
           partialResult += 1
         }
-    }
+      }
     return containedPairs
   }
 }

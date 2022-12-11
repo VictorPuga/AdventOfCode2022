@@ -22,17 +22,17 @@ struct Day3: Day {
     let values = input
       .split(separator: "\n")
       .reduce(into: 0) { totalSum, bags in
-      var currentCharacters = Set<Character>()
-      let (firstHalf, secondHalf) = splitStringInHalf(bags)
-      firstHalf.forEach { currentCharacters.insert($0) }
-        
-      for char in secondHalf {
-        if currentCharacters.contains(char) {
-          totalSum += itemValue(char)
-          break // the item can be repeated more than once
+        var currentCharacters = Set<Character>()
+        let (firstHalf, secondHalf) = splitStringInHalf(bags)
+        firstHalf.forEach { currentCharacters.insert($0) }
+
+        for char in secondHalf {
+          if currentCharacters.contains(char) {
+            totalSum += itemValue(char)
+            break // the item can be repeated more than once
+          }
         }
       }
-    }
     return values
   }
 }
