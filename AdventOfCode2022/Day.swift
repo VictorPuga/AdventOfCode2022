@@ -8,8 +8,8 @@
 import Foundation
 
 protocol Day {
-  associatedtype InputType
-  associatedtype OutputType
+  associatedtype InputType = String
+  associatedtype OutputType = Int
 
   var url: String { get }
   var number: Int { get }

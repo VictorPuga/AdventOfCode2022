@@ -9,37 +9,15 @@ import Foundation
 import RegexBuilder
 
 struct Day2: Day {
-  let number = 20
+  let number = 2
   let input = """
   A Y
   B X
   C Z
   """
 
-  enum Move: Int {
-    case rock = 0
-    case paper = 1
-    case scissors = 2
-
-    var extraPoints: Int {
-      rawValue + 1
-    }
-
-    init? (from symbol: String) {
-      switch symbol {
-      case "A", "X":
-        self = .rock
-      case "B", "Y":
-        self = .paper
-      case "C", "Z":
-        self = .scissors
-      default:
-        return nil
-      }
-    }
-  }
-
   func solve() -> Int {
+    // Rock-paper-scissors result matrix
     let results = [
       [3, 6, 0],
       [0, 3, 6],
@@ -62,11 +40,36 @@ struct Day2: Day {
       let result = try! regex.wholeMatch(in: round)
       let elf = result!.1
       let me = result!.2
-      
+
       points += results[elf.rawValue][me.rawValue]
       points += me.extraPoints
     }
 
     return points
+  }
+}
+
+extension Day2 {
+  enum Move: Int {
+    case rock = 0
+    case paper = 1
+    case scissors = 2
+
+    var extraPoints: Int {
+      rawValue + 1
+    }
+
+    init? (from symbol: String) {
+      switch symbol {
+      case "A", "X":
+        self = .rock
+      case "B", "Y":
+        self = .paper
+      case "C", "Z":
+        self = .scissors
+      default:
+        return nil
+      }
+    }
   }
 }

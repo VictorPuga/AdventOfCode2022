@@ -7,14 +7,23 @@
 
 import Foundation
 
+var currentDay: Int?
+
 let calendar: [any Day] = [
   Day1(),
-  Day2()
+  Day2(),
+  Day3()
 ]
 
-for day in calendar {
-  print(
-    "\(day.number < 10 ? " ": "" )\(day.number)",
-    day.solve()
-  )
+// currentDay = 3
+
+if let day = currentDay {
+  print(calendar[day - 1].solve())
+} else {
+  for day in calendar {
+    print(
+      "\(day.number < 10 ? " " : "")\(day.number)",
+      day.solve()
+    )
+  }
 }
