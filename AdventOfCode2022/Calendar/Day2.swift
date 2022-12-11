@@ -38,8 +38,7 @@ struct Day2: Day {
     let rounds = input.split(separator: "\n")
     for round in rounds {
       let result = try! regex.wholeMatch(in: round)
-      let elf = result!.1
-      let me = result!.2
+      let (_, elf, me) = result!.output
 
       points += results[elf.rawValue][me.rawValue]
       points += me.extraPoints
