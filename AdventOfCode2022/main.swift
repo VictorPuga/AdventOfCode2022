@@ -12,10 +12,11 @@ var currentDay: Int?
 let calendar: [any Day] = [
   Day1(),
   Day2(),
-  Day3()
+  Day3(),
+  Day4(),
 ]
 
-// currentDay = 3
+// currentDay = 4
 
 if let day = currentDay {
   print(calendar[day - 1].solve())

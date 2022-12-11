@@ -21,9 +21,9 @@ struct Day3: Day {
   func solve() -> Int {
     let values = input
       .split(separator: "\n")
-      .reduce(into: 0) { totalSum, line in
+      .reduce(into: 0) { totalSum, bags in
       var currentCharacters = Set<Character>()
-      let (firstHalf, secondHalf) = splitStringInHalf(line)
+      let (firstHalf, secondHalf) = splitStringInHalf(bags)
       firstHalf.forEach { currentCharacters.insert($0) }
         
       for char in secondHalf {
