@@ -15,6 +15,7 @@
 		32E3BE75293AB04F0048FFB3 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3BE74293AB04F0048FFB3 /* Day1.swift */; };
 		32E3BE78293AB0A20048FFB3 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3BE77293AB0A20048FFB3 /* Day.swift */; };
 		32E3BE7A293AB3C30048FFB3 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3BE79293AB3C30048FFB3 /* Day2.swift */; };
+		32FD0D4E294694C7004078EC /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FD0D4D294694C7004078EC /* Day7.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,7 @@
 		32E3BE76293AB0810048FFB3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		32E3BE77293AB0A20048FFB3 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		32E3BE79293AB3C30048FFB3 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
+		32FD0D4D294694C7004078EC /* Day7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day7.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				3231D52829465E9500DCD86E /* Day4.swift */,
 				3231D52A2946660E00DCD86E /* Day5.swift */,
 				3231D52C29467FE500DCD86E /* Day6.swift */,
+				32FD0D4D294694C7004078EC /* Day7.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				327FDF9D29464FF4005262CD /* Day3.swift in Sources */,
 				32E3BE7A293AB3C30048FFB3 /* Day2.swift in Sources */,
 				32E3BE6D293AB0390048FFB3 /* main.swift in Sources */,
+				32FD0D4E294694C7004078EC /* Day7.swift in Sources */,
 				32E3BE78293AB0A20048FFB3 /* Day.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
