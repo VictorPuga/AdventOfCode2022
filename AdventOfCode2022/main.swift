@@ -17,16 +17,18 @@ let calendar: [any Day] = [
   Day5(),
   Day6(),
   Day7(),
+  Day8(),
 ]
 
-// currentDay = 7
+// currentDay = 8
 
 if let day = currentDay {
   print(calendar[day - 1].solve())
 } else {
+  print("Day Result")
   for day in calendar {
     print(
-      "\(day.number < 10 ? " " : "")\(day.number)",
+      "\(day.number < 10 ? "  " : " ")\(day.number)",
       day.solve()
     )
   }
