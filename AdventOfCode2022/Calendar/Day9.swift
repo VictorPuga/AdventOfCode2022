@@ -108,25 +108,25 @@ extension Day9 {
   }
 
   class RopeEdge {
-    var position: Coodinate
+    var position: Coordinate
 
     init() {
-      position = Coodinate(x: 0, y: 4)
+      position = Coordinate(x: 0, y: 4)
     }
   }
 
-  struct Coodinate {
+  struct Coordinate {
     var x: Int
     var y: Int
 
-    static func - (lhs: Coodinate, rhs: Coodinate) -> Coodinate {
+    static func - (lhs: Coordinate, rhs: Coordinate) -> Coordinate {
       let x = lhs.x - rhs.x
       let y = lhs.y - rhs.y
 
-      return Coodinate(x: x, y: y)
+      return Coordinate(x: x, y: y)
     }
 
-    static func == (lhs: Coodinate, rhs: (Int, Int)) -> Bool {
+    static func == (lhs: Coordinate, rhs: (Int, Int)) -> Bool {
       return lhs.x == rhs.0 && lhs.y == rhs.1
     }
   }
