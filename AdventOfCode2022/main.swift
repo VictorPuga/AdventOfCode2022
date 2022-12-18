@@ -20,6 +20,7 @@ let calendar: [any Day] = [
   Day8(),
   Day9(),
   Day10(),
+  Day11(),
 ]
 
 // currentDay = 10
