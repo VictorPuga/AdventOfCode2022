@@ -39,7 +39,7 @@ struct Day11: Day {
     If false: throw to monkey 1
   """
   
-  func solve() -> Int {
-    return -1
+  func solve() -> String {
+    return "(Pending)"
   }
 }
